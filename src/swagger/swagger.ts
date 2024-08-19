@@ -5,23 +5,25 @@ import { boldText } from '../utils/consoleColors.ts';
 const documentConfiguration = {
   info: {
     version: '1.0.0', // by default: '1.0.0'
-    title: 'NodeJS Typescript Boilerplate', // by default: 'REST API'
-    description: 'A Starter Kit for NodeJS REST APIs', // by default: ''
+    title: 'User Auth Service', // by default: 'REST API'
+    description:
+      'Welcome to the Node.js TypeScript Authentication Service! This project is a simple, powerful, and secure way to handle user authentication, authorization, and account management.', // by default: ''
   },
   servers: [
     {
       url: 'http://localhost:8000', // by default: 'http://localhost:3000'
       description: '', // by default: ''
     },
-    // { ... }
   ],
   tags: [
-    // by default: empty Array
     {
-      name: '', // Tag name
-      description: '', // Tag description
+      name: 'Welcome', // Tag name
+      description: 'A Welcome API Endpoint to Start', // Tag description
     },
-    // { ... }
+    {
+      name: 'Auth', // Tag name
+      description: 'User Authentication and Authorization API Endpoints', // Tag description
+    },
   ],
   components: {}, // by default: empty object
 };

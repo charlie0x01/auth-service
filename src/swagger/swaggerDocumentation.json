@@ -2,8 +2,8 @@
   "openapi": "3.0.0",
   "info": {
     "version": "1.0.0",
-    "title": "NodeJS Typescript Boilerplate",
-    "description": "A Starter Kit for NodeJS REST APIs"
+    "title": "User Auth Service",
+    "description": "Welcome to the Node.js TypeScript Authentication Service! This project is a simple, powerful, and secure way to handle user authentication, authorization, and account management."
   },
   "servers": [
     {
@@ -13,14 +13,19 @@
   ],
   "tags": [
     {
-      "name": "",
-      "description": ""
+      "name": "Welcome",
+      "description": "A Welcome API Endpoint to Start"
+    },
+    {
+      "name": "Auth",
+      "description": "User Authentication and Authorization API Endpoints"
     }
   ],
   "paths": {
-    "/api/v1": {
+    "/api/v1/welcome": {
       "get": {
-        "summary": "Welcome API Endpoint to start with multiline",
+        "tags": ["Welcome"],
+        "summary": "Welcome API Endpoint to start with",
         "description": "",
         "responses": {
           "200": {

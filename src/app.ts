@@ -18,8 +18,9 @@ app.use('/api/v1/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // simple endpoint
 
-app.get('/api/v1', (req: Request, res: Response) => {
-  // #swagger.summary = "Welcome API Endpoint to start with multiline"
+app.get('/api/v1/welcome', (req: Request, res: Response) => {
+  // #swagger.tags = ['Welcome']
+  // #swagger.summary = "Welcome API Endpoint to start with"
   /*  #swagger.responses[200] = {
             description: 'Some description...',
             schema: {
